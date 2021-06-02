@@ -22,25 +22,25 @@ function generatePassword() {
   }
 
   if (upperCase===true){
-    var upperCase=["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+    upperCase=["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 
   if (upperCase===false){
-    var upperCase=[""];
+    upperCase=[""];
   }
   if (lowerCase===true) {
-    var lowerCase=["abcdefghijklmnopqrstuvwxyz"] ; 
+    lowerCase=["abcdefghijklmnopqrstuvwxyz"] ; 
   }
   if (lowerCase===false){
-    var lowerCase=[""]
+    lowerCase=[""]
   }
   if (number===true) {
-    var number=["1234567890"];
+    number=["1234567890"];
   }
   if (specialCharacter===true) {
-    var specialCharacter=["!@#$%^&*()-_=+"];
+    specialCharacter=["!@#$%^&*()-_=+"];
   }
-  if (specialCharacter=false){
-    var specialCharacter=[""];
+  if (specialCharacter===false){
+    specialCharacter=[""];
   }
 
   var randomCharacter = upperCase + lowerCase + number + specialCharacter
@@ -57,7 +57,7 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
