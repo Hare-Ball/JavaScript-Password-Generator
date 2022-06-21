@@ -23,7 +23,7 @@ function generatePassword() {
 
   if (upperCase===true){
     upperCase=["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-
+  }
   if (upperCase===false){
     upperCase=[""];
   }
@@ -35,6 +35,9 @@ function generatePassword() {
   }
   if (number===true) {
     number=["1234567890"];
+  }
+  if (number===false) {
+    number=[""];
   }
   if (specialCharacter===true) {
     specialCharacter=["!@#$%^&*()-_=+"];
@@ -53,7 +56,7 @@ function generatePassword() {
     }
     return password;
   }
-}
+  console.log(password)
 
 // Write password to the #password input
 function writePassword() {
